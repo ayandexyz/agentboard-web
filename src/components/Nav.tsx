@@ -20,7 +20,7 @@ export default function Nav() {
                   <Palette className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://github.com/ayan-de/agent-board"
+                  href="https://github.com/ayandexyz/agent-board"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="AgentBoard on GitHub"

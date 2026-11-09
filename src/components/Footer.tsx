@@ -21,22 +21,22 @@ export default function Footer() {
               <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
                 <li><a href="#features" className="hover:text-[var(--foreground)]">Features</a></li>
                 <li><a href="#installation" className="hover:text-[var(--foreground)]">Install</a></li>
-                <li><a href="https://github.com/ayan-de/agent-board" className="hover:text-[var(--foreground)]">GitHub</a></li>
+                <li><a href="https://github.com/ayandexyz/agent-board" className="hover:text-[var(--foreground)]">GitHub</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-semibold">Resources</h4>
               <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
                 <li><a href="#" className="hover:text-[var(--foreground)]">Documentation</a></li>
-                <li><a href="https://github.com/ayan-de/agent-board/issues" className="hover:text-[var(--foreground)]">Support</a></li>
-                <li><a href="https://github.com/ayan-de/agent-board/blob/main/LICENSE" className="hover:text-[var(--foreground)]">License</a></li>
+                <li><a href="https://github.com/ayandexyz/agent-board/issues" className="hover:text-[var(--foreground)]">Support</a></li>
+                <li><a href="https://github.com/ayandexyz/agent-board/blob/main/LICENSE" className="hover:text-[var(--foreground)]">License</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-semibold">Social</h4>
               <div className="mt-3 flex gap-4">
                 <a
-                  href="https://github.com/ayan-de/agent-board"
+                  href="https://github.com/ayandexyz/agent-board"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--muted)] hover:text-[var(--foreground)]"

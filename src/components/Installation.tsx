@@ -6,11 +6,8 @@ import LineBorder from '@/components/ui/LineBorder'
 import { useState } from 'react'
 
 const installCommands = [
-  { id: 'curl', label: 'curl', command: 'curl -sSL https://agentboard.ayande.xyz/install.sh | bash' },
-  { id: 'npm', label: 'npm', command: 'npm i @thisisayande/agentboard' },
-  { id: 'bun', label: 'bun', command: 'bun install -g agentboard' },
-  { id: 'brew', label: 'brew', command: 'brew install ayan-de/tap/agentboard' },
-  { id: 'paru', label: 'paru', command: 'paru -S agentboard' },
+  { id: 'curl', label: 'curl', command: 'curl -fsSL https://agentboard.ayande.xyz/install.sh | bash' },
+  { id: 'go', label: 'go', command: 'go install github.com/ayandexyz/agent-board/cmd/agentboard@latest' },
 ]
 
 export default function Installation() {
@@ -34,7 +31,7 @@ export default function Installation() {
             Get started in seconds
           </h2>
           <p className="mt-4 text-lg text-[var(--muted)]">
-            One command to install everything — tmux, Go, npm, and AgentBoard.
+            One command installs AgentBoard, plus tmux and git if you don&apos;t have them. No config, no setup step.
           </p>
         </div>
         <div className="mt-12 max-w-2xl mx-auto">
@@ -70,11 +67,18 @@ export default function Installation() {
               </button>
             </div>
             <div className="p-4 font-mono text-sm">
-              <code className="text-[var(--foreground)]">
+              <code className="text-[var(--foreground)] break-all">
                 $ {activeCommand}
               </code>
             </div>
           </div>
+
+          <p className="mt-4 text-center text-sm text-[var(--muted)]">
+            Then open any git repository and run{' '}
+            <code className="font-mono text-[var(--foreground)]">agentboard</code>.
+            Stay current with{' '}
+            <code className="font-mono text-[var(--foreground)]">agentboard update</code>.
+          </p>
 
           <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 text-center">
             <div>

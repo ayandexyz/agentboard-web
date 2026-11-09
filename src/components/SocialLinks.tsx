@@ -3,7 +3,7 @@ import Container from '@/components/ui/Container'
 import LineBorder from '@/components/ui/LineBorder'
 
 const links = [
-  { label: 'GitHub', sublabel: '1K', href: 'https://github.com/ayan-de/agent-board' },
+  { label: 'GitHub', sublabel: '1K', href: 'https://github.com/ayandexyz/agent-board' },
   { label: 'Docs', sublabel: '', href: '#' },
   { label: 'Changelog', sublabel: '', href: '#' },
   { label: 'Discord', sublabel: '', href: '#' },

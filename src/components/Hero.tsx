@@ -116,7 +116,7 @@ export default function Hero() {
                 </Button>
                 <Button
                   variant="outline"
-                  href="https://github.com/ayan-de/agent-board"
+                  href="https://github.com/ayandexyz/agent-board"
                   rel="noopener noreferrer"
                 >
                   View on GitHub
