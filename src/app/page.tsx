@@ -3,6 +3,7 @@
 import Hero from '@/components/Hero'
 import Separator from '@/components/ui/Separator'
 import Features from '@/components/Features'
+import Comparison from '@/components/Comparison'
 import Themes from '@/components/Themes'
 import Installation from '@/components/Installation'
 import Documentation from '@/components/Documentation'
@@ -39,6 +40,8 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <Separator />
+        <Comparison />
         <Separator />
         <Themes onSelectTheme={handleSelectTheme} />
         <Separator />
