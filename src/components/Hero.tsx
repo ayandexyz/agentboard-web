@@ -104,9 +104,10 @@ export default function Hero() {
                 The terminal-based Kanban board for AI agents
               </h1>
               <p className="text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8 [text-wrap:balance]">
-                AgentBoard orchestrate your AI coding agents — Claude Code, Cursor,
-                OpenCode — from a beautiful terminal interface. Built for developers
-                who want visual workflow management without leaving their terminal.
+                A keyboard-driven Kanban board for your coding agents. Plan tickets,
+                run Claude Code, Codex and OpenCode side by side in their own git
+                worktrees, and merge the results — from one 14 MB binary that runs
+                anywhere you have a terminal.
               </p>
 
               <div className="mt-8 flex items-center justify-center gap-4">
