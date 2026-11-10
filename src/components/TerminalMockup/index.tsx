@@ -7,6 +7,7 @@ import TerminalModal from '@/components/ui/TerminalModal'
 import { KanbanBoard } from './KanbanBoard'
 import { TabBar } from './TabBar'
 import { AgentSessionView } from './AgentSessionView'
+import { OpenCodeSessionView } from './OpenCodeSessionView'
 
 function TerminalHeader() {
   return (
@@ -36,6 +37,7 @@ function TerminalWindow({ columns, className = '' }: TerminalWindowProps) {
   const tabs = [
     { id: 'agentboard', label: 'agentBoard' },
     { id: 'agent-ses-01', label: 'agent-SES-01' },
+    { id: 'agent-ses-02', label: 'agent-SES-02' },
   ]
 
   return (
@@ -46,8 +48,10 @@ function TerminalWindow({ columns, className = '' }: TerminalWindowProps) {
         <div className="flex-1 min-h-0">
           {selectedTabIndex === 0 ? (
             <KanbanBoard columns={columns} selectedIndex={selectedIndex} onColumnClick={setSelectedIndex} />
-          ) : (
+          ) : selectedTabIndex === 1 ? (
             <AgentSessionView />
+          ) : (
+            <OpenCodeSessionView />
           )}
         </div>
       </div>
@@ -62,5 +66,5 @@ function TerminalWindow({ columns, className = '' }: TerminalWindowProps) {
 }
 
 export default TerminalWindow
-export { KanbanBoard, TabBar, AgentSessionView, TerminalHeader }
+export { KanbanBoard, TabBar, AgentSessionView, OpenCodeSessionView, TerminalHeader }
 export type { TerminalWindowProps }
